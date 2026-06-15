@@ -21,4 +21,11 @@ class FirestoreService {
  }
   }
 
+Future<DocumentSnapshot<Map<String,dynamic>>> getUserData(String uid)async{
+try{
+ return await _db.collection('users').doc(uid).get();
+}catch(e){
+  throw Exception('Error in fetching data from firestore: $e');
+}
+}
 }
