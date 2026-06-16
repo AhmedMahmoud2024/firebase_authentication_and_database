@@ -28,3 +28,29 @@ lib/
 │       └── profile_screen.dart      # Real-Time Cloud Profile Presenter
 │
 └── main.dart                        # Native Bootstrapper & Session Guard
+
+🛠️ Comprehensive Local Setup Instructions
+​To successfully deploy and audit this application locally, please execute the following steps:
+​1. Prerequisites Configuration
+​Ensure you have the Firebase CLI tools globally activated on your local development engine:
+# Install Firebase CLI via NPM
+npm install -g firebase-tools
+
+# Login to your verified Google/Firebase account
+firebase login
+
+# Activate the official FlutterFire CLI toolchain
+dart pub global activate flutterfire_cli
+2. Remote Project Configuration
+Head over to the Firebase Console and create a new project named devshub_week5_app.
+Navigate to Build > Authentication, enable the Email/Password sign-in method, and save.
+Navigate to Build > Firestore Database, click Create Database, select Start in test mode, and choose your hosting region.
+3. Local Initialization & Binding
+Clone this repository to your local directory, navigate into the project root, and invoke the CLI mapping engine:
+# Bind your local codebase with your remote Firebase project metadata
+flutterfire configure
+Follow the interactive prompt instructions to pick your specific project from the CLI matrix. This will generate your hidden local firebase_options.dart file.
+4. Running the App
+Fetch all the locked architectural dependencies and boot the application on your running device:
+flutter pub get
+flutter run
