@@ -1,7 +1,7 @@
 // screens/login_screen.dart
-import 'package:firebase_authentication_and_database/screens/profile_screen.dart';
+import 'package:firebase_authentication_and_database/presentation/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
-import '../services/firebase_auth_service.dart';
+import '../../data/services/firebase_auth_service.dart';
 import '../widgets/custom_text_field.dart';
 import '../widgets/custom_button.dart';
 //import 'profile_screen.dart';

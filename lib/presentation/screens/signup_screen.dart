@@ -1,8 +1,8 @@
-import 'package:firebase_authentication_and_database/screens/profile_screen.dart';
-import 'package:firebase_authentication_and_database/services/firebase_auth_service.dart';
-import 'package:firebase_authentication_and_database/services/firestore_service.dart';
-import 'package:firebase_authentication_and_database/widgets/custom_button.dart';
-import 'package:firebase_authentication_and_database/widgets/custom_text_field.dart';
+import 'package:firebase_authentication_and_database/presentation/screens/profile_screen.dart';
+import 'package:firebase_authentication_and_database/data/services/firebase_auth_service.dart';
+import 'package:firebase_authentication_and_database/data/services/firestore_service.dart';
+import 'package:firebase_authentication_and_database/presentation/widgets/custom_button.dart';
+import 'package:firebase_authentication_and_database/presentation/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 class SignupScreen extends StatefulWidget {

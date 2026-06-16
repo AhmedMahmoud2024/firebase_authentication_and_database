@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_authentication_and_database/screens/login_screen.dart';
-import 'package:firebase_authentication_and_database/services/firebase_auth_service.dart';
-import 'package:firebase_authentication_and_database/services/firestore_service.dart';
-import 'package:firebase_authentication_and_database/widgets/profile_info_tile.dart';
+import 'package:firebase_authentication_and_database/presentation/screens/login_screen.dart';
+import 'package:firebase_authentication_and_database/data/services/firebase_auth_service.dart';
+import 'package:firebase_authentication_and_database/data/services/firestore_service.dart';
+import 'package:firebase_authentication_and_database/presentation/widgets/profile_info_tile.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
