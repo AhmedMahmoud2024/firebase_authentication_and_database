@@ -1,3 +1,4 @@
+import 'package:firebase_authentication_and_database/screens/profile_screen.dart';
 import 'package:firebase_authentication_and_database/services/firebase_auth_service.dart';
 import 'package:firebase_authentication_and_database/services/firestore_service.dart';
 import 'package:firebase_authentication_and_database/widgets/custom_button.dart';
@@ -42,7 +43,7 @@ final credrntial= await _authService.singUpWithEmailAndPassword(
             Navigator.pushReplacement(
               context,
               //Homepage
-              MaterialPageRoute(builder: (context) =>  Container())
+              MaterialPageRoute(builder: (context) =>  const ProfileScreen())
             );
           }
      }

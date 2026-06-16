@@ -1,4 +1,5 @@
 // screens/login_screen.dart
+import 'package:firebase_authentication_and_database/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import '../services/firebase_auth_service.dart';
 import '../widgets/custom_text_field.dart';
@@ -36,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
       if (mounted) {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (_) => Container()),
+          MaterialPageRoute(builder: (_) => const ProfileScreen()),
         );
       }
     } catch (e) {
