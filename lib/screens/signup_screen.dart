@@ -57,6 +57,15 @@ final credrntial= await _authService.singUpWithEmailAndPassword(
 }
 }
 
+@override
+  void dispose() {
+    _nameController.dispose();
+    _emailController.dispose();
+    _passwordController.dispose();
+    super.dispose();
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
