@@ -1,5 +1,7 @@
 import 'package:firebase_authentication_and_database/services/firebase_auth_service.dart';
 import 'package:firebase_authentication_and_database/services/firestore_service.dart';
+import 'package:firebase_authentication_and_database/widgets/custom_button.dart';
+import 'package:firebase_authentication_and_database/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -68,6 +70,28 @@ final credrntial= await _authService.singUpWithEmailAndPassword(
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Create Account'),
+        backgroundColor:Colors.deepPurple,
+        foregroundColor:Colors.white ),
+        body: Padding(
+          padding:const EdgeInsets.all(24) ,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                const SizedBox(height: 32,),
+                CustomTextField(controller: _nameController, labelText: 'Name', prefixIcon: Icons.person),
+                const SizedBox(height: 16,),
+                CustomTextField(controller: _emailController, labelText: 'Email', prefixIcon: Icons.email),
+                const SizedBox(height: 16,),
+                CustomTextField(controller: _passwordController, labelText: 'Password', prefixIcon: Icons.lock),
+                const SizedBox(height: 32,),
+              CustomButton(text: 'Sign Up', onPressed: signUp)
+              ],
+            ),
+          ),
+          ),
+    );
   }
 }
